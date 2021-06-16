@@ -66,8 +66,8 @@ The frequency distribution of tweets for each product can be seen below.
 ![Product Mentions](https://github.com/dicchyant84/NLP-of-tweet-sentiment-for-Google-and-Apple/blob/main/Images/Product_mentions.jpg)
 
 Taking a closer look at apple products:
-* Ipad seems to be the most talked about in out dataset.
-* The word Apple comed second followed closely by Iphone.
+* Ipad seems to be the most talked about product in our dataset.
+* The word Apple comes second followed closely by Iphone.
 
 ![Apple Mentions](https://github.com/dicchyant84/NLP-of-tweet-sentiment-for-Google-and-Apple/blob/main/Images/Apple_Mentions.jpg)
 
@@ -75,16 +75,15 @@ Additionally, we can also plot the overall distribution of sentiments across all
 
 ![Overall Sentiment](https://github.com/dicchyant84/NLP-of-tweet-sentiment-for-Google-and-Apple/blob/main/Images/Sentiment_distribution.jpg)
 
-The plot above suggests that majority of the tweets in our dataset are of neutral sentiment. All products alse have more positive tweets than negative ones, which is a good indication that the customers are mostly in favour of both brands.
+The plot above suggests that majority of the tweets in our dataset are of neutral sentiment. All products also have more positive tweets than negative ones, which is a good indication that the customers are mostly in favour of both brands.
 
 -------------------------------------------------------------------------------------------------------------
 
 ### EDA 2 - Analyze the sentiments to identify common issues or contentment expressed by the user
 
-The computer does not understand the meaning of different words even though it is able to differentiate it through a vectorization process. POS tagging which stands for Part-of-Speech tagging is a method used in NLP to tag each word into it's gramatical category or part of the sentence it's in. Here, we will generate POS tags using nltk to distinguish the words and grab the one's that express emotions for the product.
+The computer does not understand the meaning of different words even though it is able to differentiate it through a vectorization process. POS tagging which stands for Part-of-Speech tagging is a method used in NLP to tag each word into it's gramatical category or the part of sentence it's in. Here, we will generate POS tags using nltk to distinguish the words and grab the one's that express emotions for the product.
 
-Using some code, we are able to pull the most common words used in each tweet for each product and emotion.
-The results are seen below.
+Using some code, we are able to pull the most common words used in each tweet for each product and emotion. The results are seen below.
 
 Apple positive:
 
@@ -151,14 +150,13 @@ model6.summary()
 ```
 
 
-After couple of iterations to the model, our final model has performed averagely at 65.44% test accuracy. The train accuracy is at 85%. This difference between training and test accuracy suggests that our model is overfitting. Trying different loss fuctions and adding multiple layers also does not seem to improve our model. We can conclude that our data is just not enough to train our model effectively enough to predict with better results.
-
+After a couple of iterations, our final model has performed averagely at 65.44% test accuracy. The train accuracy is 85%. The difference between training and test accuracy suggests that our model is overfitting. Trying different loss fuctions and adding multiple layers also does not seem to improve the model. We can conclude that our data is just not enough to train our model effectively and predict classes with better results.
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------
 
 ## Model Testing
 
-We can deploy the following pipeline in AWS sagemaker to track tweets real-time.
+We can deploy the following pipeline in AWS sagemaker to track tweets in real-time.
 
 ```
 # Create the sequences
