@@ -117,9 +117,14 @@ In summary:
 
 ----------------------------------------------------------------------------------------------------------
 
-### Tweet Sentiment Predictor
+
+# Tweet Sentiment Predictor
+
+
 
 ![LSTM Architecture](https://github.com/dicchyant84/NLP-of-tweet-sentiment-for-Google-and-Apple/blob/main/Images/Architecture-EncoderDecoder_v2-1080x453.png)
+
+
 
 Recurring Neural Networks using the LSTM architecture usually perform very well with text classification. We will deploy this model with L1 regularization and 'sigmoid' activation function to train and predict the class.
 
