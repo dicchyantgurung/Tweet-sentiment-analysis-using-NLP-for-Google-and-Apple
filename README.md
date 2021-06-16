@@ -50,7 +50,7 @@ for i in df_clean.index:
     # append the tokens into tokenized_tweets
     tokenized_tweet.append(tweet_words_stopped)
 ```
-Once we have the tokenized text ready, we can move onto the analysis part of this EDA.
+Once we have the tokenized text ready, we can move into the analysis part of this EDA.
 
 ### EDA 1 -  Explore the contents of the tweet to identify the product and sentiment of the user
 
