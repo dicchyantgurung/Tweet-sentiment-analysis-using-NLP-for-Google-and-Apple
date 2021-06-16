@@ -1,4 +1,4 @@
-# Tweet sentiment using NLP for Apple and Google
+# Tweet Sentiment Analysis using NLP for Apple and Google
 
 ![Title](https://github.com/dicchyant84/NLP-of-tweet-sentiment-for-Google-and-Apple/blob/main/Images/Title.jpg)
 
