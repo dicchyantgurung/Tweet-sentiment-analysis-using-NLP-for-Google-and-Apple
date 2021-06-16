@@ -104,13 +104,13 @@ In summary:
 * Customers seem to be praising both brands for the most part. 
 * There are some concerns raised for Apple, but nothing iminent for Google.
 
-Recommendations for Apple:
+### Recommendations for Apple:
 
 * Apple is pretty well-known for all it’s products and is referred to as the ‘cooler’ one of the two.
 * Customers show little to no interest in macs and macbooks. However, there seems to be some potential in iTunes.
 * Product development or differentiation in the media service industry could help Apple capture more people towards it’s brand.
 
-Recommendations for Google:
+### Recommendations for Google:
 
 * Google has an overall strong presence as a major tech company.
 * However, it needs to engage more with the customers to maintain brand loyalty.
