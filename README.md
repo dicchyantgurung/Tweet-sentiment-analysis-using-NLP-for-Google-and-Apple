@@ -52,6 +52,8 @@ for i in df_clean.index:
 ```
 Once we have the tokenized text ready, we can move into the analysis part of this EDA.
 
+----------------------------------------------------------------------------------------------------------------------------------
+
 ### EDA 1 -  Explore the contents of the tweet to identify the product and sentiment of the user
 
 By creating lists of products that points to different brands, we are able to quickly identify what brand is the tweet directed towards. This can then be plotted on a histogram to check the frequency of tweets for each brand or product.
