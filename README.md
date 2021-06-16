@@ -121,12 +121,11 @@ In summary:
 # Tweet Sentiment Predictor
 
 
-
 ![LSTM Architecture](https://github.com/dicchyant84/NLP-of-tweet-sentiment-for-Google-and-Apple/blob/main/Images/Architecture-EncoderDecoder_v2-1080x453.png)
 
 
-
 Recurring Neural Networks using the LSTM architecture usually perform very well with text classification. We will deploy this model with L1 regularization and 'sigmoid' activation function to train and predict the class.
+
 
 ```
 model6 = Sequential()
@@ -149,4 +148,22 @@ model6.compile(optimizer='rmsprop',loss='categorical_crossentropy', metrics=['ac
 model6.summary()
 ```
 
+
 After couple of iterations to the model, our final model has performed averagely at 65.44% test accuracy. The train accuracy is at 85%. This difference between training and test accuracy suggests that our model is overfitting. Trying different loss fuctions and adding multiple layers also does not seem to improve our model. We can conclude that our data is just not enough to train our model effectively enough to predict with better results.
+
+
+------------------------------------------------------------------------------------------------------------------------------------------------------
+
+## Model Testing
+
+We can deploy the following pipeline in AWS sagemaker to track tweets real-time.
+
+```
+# Create the sequences
+sample_sequences = tokenizer.texts_to_sequences(data)
+sample_padded = pad_sequences(sample_sequences, padding='post', maxlen=max_len)           
+
+# Predict the class
+Prediction = sentiment[np.around(model6.predict(sample_padded), decimals=0).argmax(axis=1)[0]]
+print('\n', 'Prediction =', Prediction)
+```
