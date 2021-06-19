@@ -167,3 +167,8 @@ sample_padded = pad_sequences(sample_sequences, padding='post', maxlen=max_len)
 Prediction = sentiment[np.around(model6.predict(sample_padded), decimals=0).argmax(axis=1)[0]]
 print('\n', 'Prediction =', Prediction)
 ```
+
+Among the things I am missing at #sxsw: the Google-ACLU 80's dance party.
+
+ Predicted Class = Positive
+Actual Class = 1
